@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Hide ScrollBar*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+.hero {
+    background-image: url(w22-riot-home.png);
+    background-position: 30% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 7%;
+    position: relative;
+}
+.logo {
+    position: relative;
+    top: -75px;
+    left: -60px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+    position: relative;
+}
+/* hover a */
+nav  a::after {
+    content: '';
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -4px;
+    transition: .40s ease;
+}
+nav a:hover::after {
+    width: 110%;
+}
+/* button */
+.btn {
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    transition: transform 0.4s ease-in-out;
+    color: #000;
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover  {
+    transform: scale(1.2);
+}
+/* nav.black  {
+    background: #000;
+    width: 100%;
+    height: 30px;
+} */
+/*Login*/
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: 0px;
+    left: 80px;
+}
+.logo-img {
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 30px;
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.h2-text {
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(155, 151, 151);
+}
+
+.dot {
+    height: 45px;
+    width: 45px;
+    background-color: #181818;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.login-btn {
+    width: 280px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 110px;
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    
+    transition: 0.6s ease-in-out;
+    background-size: 200%;
+}
+
+.btn1 {
+    background-image: linear-gradient(to left,#0bc4e2 ,#26bae7 ,#44cee0);
+}
+.login-btn:hover {
+    background-position: right;
+    box-shadow:  0 10px 10px 10px rgba(9, 220, 235, 0.1);
+}
+
+/* section about */
+section {
+    width: 100%;
+    height: 90vh;
+    background: rgb(12, 12, 12);
+
+    /* background-image: url("sepia-bg-m.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: relative;
+}
+/* welcome */
+
+.h4 {
+    font-size: 60px;
+    color: #f2f2f2;
+    display: block;
+    margin-left: 75px;
+    padding-top: 35px;
+
+/* 
+    color:rgba(0,0,0,1);
+    background-image: linear-gradient(to left,#0bc4e2 ,#c6e1e9 ,#12dcf7);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+transition: color .2s ease-in-out; */
+}
+/* .h4:hover{
+    color:rgba(0,0,0,0);
+  }
+  @keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+  } */
+
+/* video-and-content */
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+}
+
+.intro-text {
+    color: #f2f2f2;
+    text-align:justify ;
+    line-height: 25px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+
+h3 {
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+
+/* learn-more */
+.border {
+    position: absolute;
+    top: -220px;
+    left: 320px;
+}
+.learn-more {
+    margin-top: 100px;
+    margin-left: 900px;
+
+}
+.btn-LM {
+    width: 250px;
+    height: 80px;
+    border: none;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 25px;
+    border-radius: 35px;
+    cursor: pointer;
+
+    transition: 0.6s ease-in-out;
+    background-size: 200%;
+}
+
+.btn2 {
+    background-image: linear-gradient(to left,#0bc4e2 ,#26bae7 ,#44cee0);
+}
+.btn-LM:hover {
+    background-position: right;
+    box-shadow:  0 10px 20px 20px rgba(9, 220, 235, 0.1);
+}
+/* setion-shedule */
+.schedule {
+    background-image: url("WORLDS-2022-_-ORCHESTRAL-THEME-League-of-Legends-0-4-screenshot.webp");
+    width: 100%;
+    height: 100vh;
+}
+.gr {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+/* bo1 */
+.BO {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:  40px ;
+    padding-top: 100px;
+}
+.bo-div {
+    width: 270px;
+    margin-bottom: 15px;
+}
+
+.bo {
+    background-color:#181818;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    color:#d6b598;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.bo:hover {
+    background-color: #f2f2f2;
+    color: #181818;
+}
+.bo1 {
+    font-size: 60px;
+}
+/* date */
+.date {
+    background-color: #181818;
+    width: 70px;
+    height: 753px;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    color: #d6b598;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+.text-date:hover {
+    color: #f1e9e9;
+}
+/* versus */
+.versus {
+    width: 750px;
+    height: 753px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.versus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.predict {
+    background-color: #d6cdcd;
+    width: 100%;
+    height: 135px;
+    display: flex;
+}
+.info-match {
+    width: 75%;
+    background-color: #f1e9e9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d6b598;
+    width: 25%;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+.choose:hover {
+    background-color: #c7c7c7;
+}
+.info-text {
+    font-size: 30px;
+}
+.choose-text {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
